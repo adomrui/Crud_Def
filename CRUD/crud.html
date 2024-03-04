@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/crudstyle.css">
+    <link rel="shortcut icon" href="./img/1366_2000.jpeg" type="image/x-icon">
+    <title>Lista</title>
+</head>
+<body>
+    <div id="container">
+        
+<table>
+    <caption>USUARIOS</caption>
+    <tr>
+        <th>Num</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Email</th>
+        <th>Usuario</th>
+        
+        <th>Genero</th>
+        <th>Contraseña</th>
+        <th>Acciones</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Ángel</td>
+        <td>Siu</td>
+        <td>angelsiu@gmail.com</td>
+        <td>33goat</td>
+        
+        <td>Hombre </td>
+        <td>12345morenito</td>
+        <th><button  class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()">Borrar</button></th>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Comandante</td>
+        <td>Tete</td>
+        <td>comandante77@gmail.com</td>
+        <td>Comandante7</td>
+        
+        <td>Hombre</td>
+        <td>elcomandante45</td>
+        <th><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()">Borrar</button></th>
+    </tr>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Minita</td>
+        <td>Cariñosa</td>
+        <td>minitacarinosa@gmail.com</td>
+        <td>LaRobledo</td>
+        
+        <td>Mujer</td>
+        <td>quebarbarida33</td>
+        <th><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()" >Borrar</button></th>
+    </tr>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>María</td>
+        <td>Poclaro</td>
+        <td>maripo45@gmail.com</td>
+        <td>Poclaro</td>
+        
+        <td>Mujer</td>
+        <td>dabs1plus</td>
+        <th><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()" >Borrar</button></th>
+    </tr>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Asoplaaa</td>
+        <td>Abdalu</td>
+        <td>asoplalosgatos@gmail.com</td>
+        <td>Asoplaaaa</td>
+        
+        <td>Otro</td>
+        <td>vinisius14</td>
+        <th><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()" >Borrar</button></th>
+    </tr>
+    </tr>
+</table>
+
+    </div>
+
+    <div id="confirmationDialog" class="confirmation-dialog">
+        <p>¿Está seguro de querer eliminar este usuario?</p>
+        <button class="btn primary" onclick="deleteUser()">Eliminar</button>
+        <button class="btn secondary" onclick="closeDialog()">Cancelar</button>
+    </div>
+
+    <script src="./js/validacionLogin_Listado.js"></script>
+</body>
+</html>
